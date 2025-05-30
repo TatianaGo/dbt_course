@@ -1,0 +1,21 @@
+sources:
+  - name: stg_001   #название
+    schema: stg_001 #если schema name совподают можно не писать
+    description: данные  из первого источника
+    tables:
+      - name: actor
+        description: актеры
+        columns:
+          - name: actor_id
+            description: ид актера
+          - name: first_name
+            description: имя актера
+            tests:
+              - not_null
+          - name: last_name
+            description: фамилия
+          - name: last_update
+            description: дата последного обновления          
+      - name: city
+        description: Города
+                              
