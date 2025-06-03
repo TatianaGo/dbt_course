@@ -1,6 +1,6 @@
 sources:
   - name: stg_001   #название
-    schema: stg_001 #если schema name совподают можно не писать
+    schema: stg_001 #если schema name совпадают можно не писать
     description: данные  из первого источника
     tables:
       - name: actor
@@ -18,4 +18,5 @@ sources:
             description: дата последного обновления          
       - name: city
         description: Города
-                              
+      - name: payment
+        description: оплата   
